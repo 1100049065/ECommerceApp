@@ -1,10 +1,13 @@
 import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
+import {Link, Router, Routes} from 'react-router-dom'
 import  { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <header>  <Navbar bg="dark" variant='dark' expand="lg" collapse>
-          <Container>
+    <header>
+      <Navbar bg="dark" variant="dark" expand="lg" collapse>
+      <Container>
             <Navbar.Brand href="/">Deep Shop</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -14,9 +17,9 @@ const Header = () => {
               </Nav>
             </Navbar.Collapse>
           </Container>
-        </Navbar> 
-        </header>  
-    )
+            </Navbar>
+    </header>
+  );
 }
 
 
